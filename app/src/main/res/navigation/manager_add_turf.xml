@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manager_add_turf"
+    app:startDestination="@id/turf_details">
+
+    <fragment
+        android:id="@+id/turf_details"
+        android:name="com.soumil.quickbook.managerTurf.TurfDetails"
+        android:label="fragment_turf_details"
+        tools:layout="@layout/fragment_turf_details" >
+        <action
+            android:id="@+id/action_turf_details_to_set_turf_location"
+            app:destination="@id/set_turf_location" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/set_turf_location"
+        android:name="com.soumil.quickbook.managerTurf.SetTurfLocation"
+        android:label="fragment_set_turf_location"
+        tools:layout="@layout/fragment_set_turf_location" >
+        <action
+            android:id="@+id/action_set_turf_location_to_turf_details"
+            app:destination="@id/turf_details"
+            app:popUpTo="@id/set_turf_location"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

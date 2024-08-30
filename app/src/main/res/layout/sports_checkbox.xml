@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sportCheckboxLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    android:columnCount="2">
+
+    <CheckBox
+        android:id="@+id/cricket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cricket"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+    <CheckBox
+        android:id="@+id/football"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Football"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+    <CheckBox
+        android:id="@+id/badminton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Badminton"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+    <CheckBox
+        android:id="@+id/basketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basketball"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+    <CheckBox
+        android:id="@+id/volleyball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volleyball"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+    <CheckBox
+        android:id="@+id/swimming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swimming"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+
+</GridLayout>

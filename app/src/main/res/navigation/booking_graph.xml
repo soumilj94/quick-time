@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_graph"
+    app:startDestination="@id/turfInfo">
+
+    <fragment
+        android:id="@+id/turfInfo"
+        android:name="com.soumil.quickbook.turfBooking.TurfInfo"
+        android:label="TurfInfo" >
+        <action
+            android:id="@+id/action_turfInfo_to_viewTurfLocation"
+            app:destination="@id/viewTurfLocation" />
+        <action
+            android:id="@+id/action_turfInfo_to_bookingForm"
+            app:destination="@id/bookingForm" />
+        <action
+            android:id="@+id/action_turfInfo_to_viewReviews"
+            app:destination="@id/viewReviews" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewTurfLocation"
+        android:name="com.soumil.quickbook.turfBooking.ViewTurfLocation"
+        android:label="fragment_view_turf_location"
+        tools:layout="@layout/fragment_view_turf_location" >
+        <action
+            android:id="@+id/action_viewTurfLocation_to_turfInfo"
+            app:destination="@id/turfInfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingForm"
+        android:name="com.soumil.quickbook.turfBooking.BookingForm"
+        android:label="fragment_booking_form"
+        tools:layout="@layout/fragment_booking_form" >
+        <action
+            android:id="@+id/action_bookingForm_to_confirmBooking"
+            app:destination="@id/confirmBooking" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmBooking"
+        android:name="com.soumil.quickbook.turfBooking.ConfirmBooking"
+        android:label="fragment_confirm_booking"
+        tools:layout="@layout/fragment_confirm_booking" />
+    <fragment
+        android:id="@+id/viewReviews"
+        android:name="com.soumil.quickbook.turfBooking.ViewReviews"
+        android:label="fragment_view_reviews"
+        tools:layout="@layout/fragment_view_reviews" />
+
+</navigation>

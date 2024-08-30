@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="My Turfs"
+        android:icon="@drawable/my_turfs"
+        android:id="@+id/manager_turfs">
+    </item>
+
+    <item
+        android:title="Bookings"
+        android:icon="@drawable/bookings_svg"
+        android:id="@+id/manager_bookings">
+    </item>
+    <item
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        android:id="@+id/manager_profile">
+
+    </item>
+</menu>

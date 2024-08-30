@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.manager.profile.ManagerProfile"
+    tools:ignore="HardcodedText"
+    android:background="@color/grey100">
+
+    <LinearLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Profile Settings"
+            android:textSize="@dimen/_18ssp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/_50sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBar"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_15sdp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/profile_image_background"
+                    android:contentDescription="Profile Image"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/person_icon" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_24ssp"
+                    android:fontFamily="@font/quicksand_semi_bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlHardcoded"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/editProfileBtn"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    style="@style/ProfileActionButton"
+                    android:drawableLeft="@drawable/icon_edit_profile_filled"
+                    android:text="Edit Profile"/>
+
+                <Button
+                    android:id="@+id/changePassBtn"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    style="@style/ProfileActionButton"
+                    android:drawableLeft="@drawable/icon_reset_pass_filled"
+                    android:text="Change Password"/>
+                <Button
+                    android:id="@+id/helpBtn"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    style="@style/ProfileActionButton"
+                    android:drawableLeft="@drawable/icon_help_filled"
+                    android:text="About QuickTime."/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/logOutBtn"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                style="@style/ProfileActionButton"
+                android:drawableLeft="@drawable/icon_log_out_filled"
+                android:text="Log Out"
+                android:textColor="@color/important_red"
+                android:paddingVertical="@dimen/_10sdp"
+                android:drawableRight="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                android:textColor="@color/grey500"
+                android:fontFamily="@font/quicksand_regular"
+                android:paddingVertical="@dimen/_10sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
