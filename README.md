@@ -23,6 +23,11 @@ Open the app's **AndroidManifest.xml** file:
     android:value="paste your API_KEY here"/>
 ```
 ## Firebase Implementation
+Open your Firebase console in your browser:
+1. Enable `Authentication` and select `Email/Password`
+2. Enable `Storage`
+3. Enable `Crashlytics`
+4. Enable `Cloud Firestore Database`
 Add your Firebase `google-services.json` file at: 
 **/project-directory/app/google-services.json**
 
