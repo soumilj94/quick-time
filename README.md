@@ -35,11 +35,11 @@ Open your Firebase console in your browser:
     - games
     - cities
     - reviews
-  
-<p>Add your Firebase `google-services.json` file at:
+
+Add your Firebase `google-services.json` file at:
 
 ```bash
-project-directory/app/google-services.json`
+project-directory/app/google-services.json
 ```
 
 Refer this to setup and connect the app with your firebase account:
