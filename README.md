@@ -27,7 +27,7 @@ Open your Firebase console in your browser:
 1. Enable `Authentication` and select `Email/Password`
 2. Enable `Storage`
 3. Enable `Crashlytics`
-4. Enable `Cloud Firestore Database`
+4. Enable `Cloud Firestore Database` <br/>
 Add your Firebase `google-services.json` file at: 
 **/project-directory/app/google-services.json**
 
