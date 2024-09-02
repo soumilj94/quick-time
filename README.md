@@ -35,8 +35,8 @@ Open your Firebase console in your browser:
     - games
     - cities
     - reviews
-<br/>
-Add your Firebase `google-services.json` file at: ``project-directory/app/google-services.json``
+  
+<p>Add your Firebase `google-services.json` file at: `project-directory/app/google-services.json`</p>
 
 Refer this to setup and connect the app with your firebase account:
 [Firebase Setup](https://firebase.google.com/docs/android/setup)
